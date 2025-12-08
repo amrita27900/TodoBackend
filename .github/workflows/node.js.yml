@@ -33,5 +33,5 @@ jobs:
         cd $GITHUB_WORKSPACE
         pm2 stop TodoBackend || true
         pm2 delete TodoBackend || true
-        pm2 start index.js --name TodoBackend
+        pm2 start server.js --name TodoBackend
         pm2 save
